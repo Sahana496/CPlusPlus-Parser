@@ -1,0 +1,113 @@
+#include <iostream>
+#include <stdio.h>
+#include<string>
+using namespace std;
+
+string mapping1(int x)
+{
+	switch(x)
+	{
+		case 0: return "auto";
+		case 1: return "break";
+		case 2: return "case";
+		case 3: return "char";
+		case 4: return "const";
+		case 5: return "continue";
+		case 6: return "default";
+		case 7: return "do";
+		case 8: return "double";
+		case 9: return "else";
+		case 10: return "enum";
+		case 11: return "extern";
+		case 12: return "float";
+		case 13: return "goto";
+		case 14: return "if";
+		case 15: return "int";
+		case 16: return "long";
+		case 17: return "register";
+		case 18: return "return";
+		case 19: return "short";
+		case 20: return "signed";
+		case 21:return "sizeof";
+		case 22: return "static";
+		case 400: return "struct";
+		case 24: return "switch";
+		case 25: return "typedef";
+		case 26: return "union";
+		case 27: return "unsigned";
+		case 28: return "void";
+		case 29: return "volatile";
+		case 30: return "while";
+		case 36: return "$";
+		case 259: return "...";
+		case 257: return "string_literal";
+		case 258: return "for";
+		case 256: return "constant";
+		case 260: return "right_assign";
+		case 261: return "left_assign";
+		case 262: return "add_assign";
+		case 263: return "sub_assign";
+		case 264: return "mul_assign";
+		case 265: return "div_assign";
+		case 266: return "mod_assign";
+		case 267: return "and_assign";
+		case 268: return "xor_assign";
+		case 269: return "or_assign";
+		case 270: return "right_op";
+		case 271: return "left_op";
+		case 272: return "inc_op";
+		case 273: return "dec_op";
+		case 274: return "ptr_op";
+		case 275: return "and_op";
+		case 276: return "or_op";
+		case 277: return "le_op";
+		case 278: return "ge_op";
+		case 279: return "eq_op";
+		case 280: return "ne_op";
+		case 281: return "identifier";
+		case 282: return "class";
+		case 283: return "private";
+		case 284: return "public";
+		case 285: return "protected";
+		case 286: return "try";
+		case 287: return "namespace";
+		case 288: return "inline";
+		case 289: return "new";
+		case 290: return "delete";
+		case 291: return "friend";
+		case 292: return "this";
+		case 293: return "virtual";
+		case 294: return "catch";
+		case 295: return "throw";
+		case 296: return "mutable";
+		case 298: return "using";
+		case 299: return "include";
+		case 301: return "define";
+		case 104: return "h";
+		case 35: return "#";
+		case 59: return ";";
+		case 123: return "{";
+		case 125: return "}";
+		case 44: return ",";
+		case 58: return ":";
+		case 61: return "=";
+		case 40: return "(";
+		case 41: return ")";
+		case 91: return "[";
+		case 93: return "]";
+		case 46: return ".";
+		case 38: return "&";
+		case 33: return "!";
+		case 126: return "~";
+		case 45: return "-";
+		case 43: return "+";
+		case 42: return "*";
+		case 47: return "/";
+		case 37: return "%";
+		case 60: return "<";
+		case 62: return ">";
+		case 94: return "^";
+		case 124: return "|";
+		case 63: return "?";
+	}
+}

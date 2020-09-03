@@ -1,0 +1,343 @@
+Translation_unit Preprocessing_file
+Translation_unit Preprocessing_file Declaration_seq
+Translation_unit Declaration_seq
+Declaration_seq Declaration
+Declaration_seq Declaration_seq Declaration
+Declaration Block_declaration
+Declaration Function_definition
+Declaration Namespace_definition
+Block_declaration Simple_declaration
+Block_declaration Namespace_alias_definition
+Block_declaration Using_directive
+Simple_declaration Declaration_specifiers_seq ;
+Simple_declaration Declaration_specifiers_seq Init_declarator_list ;
+Simple_declaration Init_declarator_list ;
+Simple_declaration ;
+Declaration_specifiers Storage_class_specifier
+Declaration_specifiers Function_specifier
+Declaration_specifiers Type_specifier
+Declaration_specifiers friend
+Declaration_specifiers typedef
+Declaration_specifiers_seq Declaration_specifiers_seq Declaration_specifiers
+Declaration_specifiers_seq Declaration_specifiers
+Storage_class_specifier extern
+Storage_class_specifier static
+Storage_class_specifier auto
+Storage_class_specifier register
+Function_specifier inline
+Function_specifier virtual
+Function_specifier explicit
+Typedef_name identifier
+Class_name identifier
+Type_specifier void
+Type_specifier char
+Type_specifier short
+Type_specifier int
+Type_specifier long
+Type_specifier float
+Type_specifier double
+Type_specifier signed
+Type_specifier bool
+Type_specifier unsigned
+Type_specifier type_name
+Type_specifier Class_specifier
+Type_specifier Cv_qualifier
+Type_name Class_name
+Type_name Typedef_name
+Namespace_name Original_namespace_name
+Namespace_name Namespace_alias
+Original_namespace_name identifier
+Namespace_alias identifier
+Namespace_definition Named_namespace_definition
+Namespace_definition Unnamed_namespace_definition
+Named_namespace_definition Original_namespace_definition
+Named_namespace_definition Extension_namespace_definition
+Original_namespace_definition namespace identifier { Namespace-body }
+Extension_namespace_definition namespace Original_namespace_name { Namespace-body }
+Unnamed_namespace_definition namespace { Namespace-body }
+Namespace-body Declaration_seq
+Namespace-body @
+Using_directive using namespace Namespace_name ;
+Init_declarator_list Init_declarator
+Init_declarator_list Init_declarator_list , Init_declarator
+Init_declarator Declarator
+Init_declarator Declarator = Initializer
+Declarator Pointer Direct_declarator
+Declarator Direct_declarator
+Direct_declarator identifier
+Direct_declarator ( Declarator )
+Direct_declarator Direct_declarator [ Constant_expression ]
+Direct_declarator Direct_declarator [ ]
+Direct_declarator Direct_declarator ( Parameter_declaration_clause )
+Direct_declarator Direct_declarator ( Parameter_declaration_clause ) Cv_qualifier_list Exception_specification
+Direct_declarator Direct_declarator ( Parameter_declaration_clause ) Cv_qualifier_list
+Direct_declarator Direct_declarator ( Parameter_declaration_clause ) Exception_specification
+Direct_declarator Direct_declarator ( Identifier_list )
+Direct_declarator Direct_declarator ( )
+Pointer *
+Pointer * Pointer
+Pointer * Cv_qualifier_list Pointer
+Pointer * Cv_qualifier_list
+Cv_qualifier_list Cv_qualifier
+Cv_qualifier_list Cv_qualifier_list Cv_qualifier
+Cv_qualifier const
+Cv_qualifier volatile
+Type_id Type_specifier_seq
+Type_id Type_specifier_seq Abstract_declarator
+Type_specifier_seq Type_specifier Type_specifier_seq
+Type_specifier_seq Type_specifier
+Abstract_declarator Pointer
+Abstract_declarator Direct_abstract_declarator 
+Abstract_declarator Pointer Direct_abstract_declarator
+Direct_abstract_declarator ( Abstract_declarator )
+Direct_abstract_declarator [ ]
+Direct_abstract_declarator [ Constant_expression ]
+Direct_abstract_declarator Direct_abstract_declarator [ ]
+Direct_abstract_declarator Direct_abstract_declarator [ Constant_expression ]
+Direct_abstract_declarator ( )
+Direct_abstract_declarator ( Parameter_declaration_clause )
+Direct_abstract_declarator Direct_abstract_declarator ( )
+Direct_abstract_declarator Direct_abstract_declarator ( Parameter_declaration_clause )
+Direct_abstract_declarator Direct_abstract_declarator ( Parameter_declaration_clause ) Cv_qualifier_list Exception_specification
+Direct_abstract_declarator Direct_abstract_declarator ( Parameter_declaration_clause ) Cv_qualifier_list
+Direct_abstract_declarator Direct_abstract_declarator ( Parameter_declaration_clause ) Exception_specification
+Parameter_declaration_clause Parameter_declaration_list
+Parameter_declaration_clause Parameter_declaration_list , ...
+Parameter_declaration_list Parameter_declaration
+Parameter_declaration_list Parameter_declaration_list , Parameter_declaration
+Parameter_declaration Declaration_specifiers_seq Declarator
+Parameter_declaration Declaration_specifiers_seq Declarator = Assignment_expression
+Parameter_declaration Declaration_specifiers_seq Abstract_declarator
+Parameter_declaration Declaration_specifiers_seq
+Parameter_declaration Declaration_specifiers_seq Abstract_declarator = Assignment_expression
+Parameter_declaration Declaration_specifiers_seq = Assignment_expression
+Function_definition Declaration_specifiers_seq Declarator Compound_statement
+Function_definition Declaration_specifiers_seq Declarator Compound_statement
+Function_definition Declarator Compound_statement
+Function_definition Declarator Compound_statement
+Function_definition Declaration_specifiers_seq Declarator Function_try_block
+Function_definition Declarator Function_try_block
+Initializer Assignment_Expression
+Initializer { Initializer_list }
+Initializer { Initializer_list , }
+Initializer_list Initializer
+Initializer_list Initializer_list , Initializer
+Class_name identifier
+Class_specifier Class_head { Member_specification }
+Class_specifier Class_head { }
+Class_head Class_key identifier Base_clause
+Class_head Class_key Base_clause
+Class_head Class_key identifier
+Class_head Class_key Nested_name_specifier identifier Base_clause
+Class_head Class_key Nested_name_specifier identifier
+Class_key class
+Class_key struct
+Class_key union
+Member_specification Member_declaration Member_specification
+Member_specification Member_declaration
+Member_specification Access_specifier : Member_specification
+Member_specification Access_specifier :
+Member_declaration Declaration_specifiers_seq Member_declarator_list ;
+Member_declaration Declaration_specifiers_seq ;
+Member_declaration Member_declarator_list ;
+Member_declaration ;
+Member_declaration Function_definition ;
+Member_declaration Function_definition
+Member_declarator_list Member_declarator
+Member_declarator_list Member_declarator_list , Member_declarator
+Member_declarator Declarator
+Member_declarator Declarator = 0
+Member_declarator Declarator = Constant_expression
+Member_declarator identifier : Constant_expression
+Member_declarator : Constant_expression
+Base_clause : Base_specifier_list
+Base_specifier_list Base_specifier
+Base_specifier_list Base_specifier_list , Base_specifier
+Base_specifier :: Class_name
+Base_specifier Class_name
+Base_specifier virtual Access_specifier :: Class_name
+Base_specifier virtual :: Class_name
+Base_specifier virtual Class_name
+Base_specifier virtual Access_specifier Class_name
+Base_specifier Access_specifier virtual :: Class_name
+Base_specifier Access_specifier :: Class_name
+Base_specifier Access_specifier Class_name
+Base_specifier Access_specifier virtual Class_name
+Access_specifier private
+Access_specifier public
+Access_specifier protected
+Identifier_list identifier
+Identifier_list Identifier_list , identifier
+Statement Labeled_statement
+Statement Compound_statement
+Statement Expression_statement
+Statement Selection_statement
+Statement Iteration_statement
+Statement Jump_statement
+Statement Declaration_statement
+Statement Try_block
+Labeled_statement identifier : Statement
+Labeled_statement case Constant_expression : Statement
+Labeled_statement default : Statement
+Compound_statement { }
+Compound_statement { Statement_list }
+Declaration_list Declaration
+Declaration_list Declaration_list Declaration
+Statement_list Statement
+Statement_list Statement_list Statement
+Expression_statement ;
+Expression_statement Expression ;
+Selection_statement if ( Expression ) Statement
+Selection_statement if ( Expression ) Statement else Statement
+Selection_statement switch ( Expression ) Statement
+Iteration_statement while ( Expression ) Statement
+Iteration_statement do Statement while ( Expression ) ;
+Iteration_statement for ( Expression_statement Expression_statement ) Statement
+Iteration_statement for ( Expression_statement Expression_statement Expression ) Statement
+Jump_statement goto identifier ;
+Jump_statement continue ;
+Jump_statement break ;
+Jump_statement return Expression ;
+Jump_statement return ;
+Declaration_statement Block_declaration
+Try_block try Compound_statement Handler_seq
+Function_try_block try Compound_statement Handler_seq
+Handler_seq Handler Handler_seq
+Handler_seq Handler
+Handler catch ( Exception_declaration ) Compound_statement
+Exception_declaration Type_specifier_seq Declarator
+Exception_declaration Type_specifier_seq Abstract_declarator
+Exception_declaration Type_specifier_seq
+Exception_declaration ...
+Throw_expression throw Assignment_expression
+Throw_expression throw
+Exception_specification throw ( Type_id_list )
+Exception_specification throw ( )
+Type_id_list Type_id
+Type_id_list Type_id_list , Type_id
+Primary_expression identifier
+Primary_expression constant
+Primary_expression string_literal
+Primary_expression ( Expression )
+Primary_expression this
+Primary_expression :: identifier
+Nested_name_specifier Class-or-namespace-name :: Nested_name_specifier
+Nested_name_specifier Class-or-namespace-name ::
+Class-or-namespace-name Class_name
+Class-or-namespace-name Namespace_name
+Postfix_expression Primary_expression
+Postfix_expression Postfix_expression [ Expression ]
+Postfix_expression Postfix_expression ( )
+Postfix_expression Postfix_expression ( Argument_expression_list )
+Postfix_expression Postfix_expression . identifier
+Postfix_expression Postfix_expression ptr_op identifier
+Postfix_expression Postfix_expression inc_op
+Postfix_expression Postfix_expression dec_op
+Argument_expression_list Assignment_expression
+Argument_expression_list Argument_expression_list , Assignment_expression
+Unary_expression Postfix_expression
+Unary_expression inc_op Unary_expression
+Unary_expression dec_op Unary_expression
+Unary_expression Unary_operator Cast_expression
+Unary_expression sizeof Unary_expression
+Unary_expression sizeof ( Type_id )
+Unary_expression New_expression
+Unary_expression Delete_expression
+Unary_operator &
+Unary_operator *
+Unary_operator +
+Unary_operator -
+Unary_operator ~
+Unary_operator !
+New_expression new New_placement New_type_id New_initializer
+New_expression new New_type_id
+New_expression new New_type_id New_initializer
+New_expression new New_placement New_type_id
+New_placement ( Argument_expression_list )
+New_type_id Type_specifier_seq New_declarator
+New_type_id Type_specifier_seq
+New_declarator Pointer New_declarator
+New_declarator Pointer
+New_declarator Direct_new_declarator
+Direct_new_declarator [ Expression ]
+Direct_new_declarator Direct_new_declarator [ Constant_expression ]
+New_initializer ( Argument_expression_list )
+New_initializer ( )
+Delete_expression :: delete Cast_expression
+Delete_expression delete Cast_expression
+Delete_expression :: delete [ ] Cast_expression
+Delete_expression delete [ ] Cast_expression
+Cast_expression Unary_expression
+Cast_expression ( Type_id ) Cast_expression
+Multiplicative_expression Cast_expression
+Multiplicative_expression Multiplicative_expression * Cast_expression
+Multiplicative_expression Multiplicative_expression / Cast_expression
+Multiplicative_expression Multiplicative_expression % Cast_expression
+Additive_expression Multiplicative_expression
+Additive_expression Additive_expression + Multiplicative_expression
+Additive_expression Additive_expression - Multiplicative_expression
+Shift_expression Additive_expression
+Shift_expression Shift_expression left_op Additive_expression
+Shift_expression Shift_expression right_op Additive_expression
+Relational_expression Shift_expression
+Relational_expression Relational_expression < Shift_expression
+Relational_expression Relational_expression > Shift_expression
+Relational_expression Relational_expression le_op Shift_expression
+Relational_expression Relational_expression ge_op Shift_expression
+Equality_expression Relational_expression
+Equality_expression Equality_expression eq_op Relational_expression
+Equality_expression Equality_expression ne_op Relational_expression
+And_expression Equality_expression
+And_expression And_expression & Equality_expression
+Exclusive_or_expression And_expression
+Exclusive_or_expression Exclusive_or_expression ^ And_expression
+Inclusive_or_expression Exclusive_or_expression
+Inclusive_or_expression Inclusive_or_expression | Exclusive_or_expression
+Logical_and_expression Inclusive_or_expression
+Logical_and_expression Logical_and_expression and_op Inclusive_or_expression
+Logical_or_expression Logical_and_expression
+Logical_or_expression Logical_or_expression or_op Logical_and_expression
+Conditional_expression Logical_or_expression
+Conditional_expression Logical_or_expression ? Expression : Conditional_expression
+Assignment_expression Conditional_expression
+Assignment_expression Unary_expression Assignment_operator Assignment_expression
+Assignment_expression Throw_expression
+Assignment_operator =
+Assignment_operator mul_assign
+Assignment_operator div_assign
+Assignment_operator mod_assign
+Assignment_operator add_assign
+Assignment_operator sub_assign
+Assignment_operator left_assign
+Assignment_operator right_assign
+Assignment_operator and_assign
+Assignment_operator or_assign
+Assignment_operator xor_assign
+Expression Assignment_expression
+Expression Expression , Assignment_expression
+Constant_expression Conditional_expression
+Preprocessing_token Header_name
+Preprocessing_token identifier
+Preprocessing_token Pp-number
+Preprocessing_token string_literal
+Header_name < identifier >
+Header_name < identifier . h >
+Header_name < identifier / identifier . h >
+Header_name " identifier "
+Header_name " identifier . h "
+Header_name " identifier / identifier .h "
+Pp-number constant
+Pp-number . constant
+Pp-number Pp-number .
+Pp-number Pp-number constant
+Preprocessing_file Group
+Preprocessing @
+Group Group_part
+Group Group Group_part
+Group_part Control_line
+Control_line # include Pp_tokens
+Control_line # define identifier Replacement_list
+Replacement_list Pp_tokens
+Replacement_list @
+Pp_tokens Preprocessing_token
+Pp_tokens Pp_tokens Preprocessing_token

@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+class d
+{
+	public:
+	int s;
+	private:
+	int f;
+	s() {}
+	int d(int d)
+	{
+		return s;
+	}
+
+};
+int main()
+{
+	int i,j,k;
+	int a[100][100];
+
+	try
+	{
+		for(i=0;i<100;i++)
+			for(j=0;j<100;j++)
+				cin>>a[i][j]; 
+	}
+	catch(char *s)
+	{
+		cout<<"Error";
+	}
+	
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include <iostream>
+#define HELLO 23
+using namespace std;
+
+int func(int a,char s[9])
+{
+	int x,y,d;
+	try
+	{
+		int d;
+	}
+}
+
